@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*
+    HTML[id] CSS[#] (uma vez por doc)
+    HTML[class] CSS[.] (use e abuse)
+*/
+
+body {
+    background-color: #B8CAE5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #5e6774;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #5F6977;
+    color: white;
+}
+
+h2 {
+    color: #7A8799;
+}
+
+.basico {
+    color: #7A8799;
+}
+
+.intermediario {
+    color: #997a99;
+}
+
+.avancado {
+    color: #8e997a;
+}

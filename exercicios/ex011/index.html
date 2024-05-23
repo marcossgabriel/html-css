@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir essa imagem em vários dispositivos ou então simplesmente auemnte e diminua o zoom.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Imagem fléxivel">
+    </picture>
+    <h1>Reproduzindo aúdios</h1>
+    <p>Vamos colocar uma música para tocar:</p>
+    <audio src="midia/masquerade.mp3"controls ></audio>
+    <p>Vamos reproduzir um podcast agora:</p>
+    <audio preload="metadata" controls>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/masquerade.wav" type="audio/wav">
+        <source src="midia/guanacast-33.mp3" type="audio/ogg">
+    </audio> 
+    <H2>    oI MEUS MANOS</H2>
+</body>
+</html>
