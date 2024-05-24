@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: "droid";
+    src: url(../estilo/fonts/IDroid.otf);
+}
+
+:root {
+    --cor0: #B2D5B7;
+    --cor1: #87AA8D;
+    --cor2: #ABFFB7;
+    --cor3: #508057;
+    --cor4: #2B5C32;
+    --cor5: #0F3315;
+    --font0: Arial, Helvetica, sans-serif;
+    --font1: 'Bebas Neue', cursive;
+    --font2: 'droid',cursive;
+}
+
+* {
+    margin: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor0);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+
+    min-width: 400px;
+    max-width: 800px;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main > p {
+    font-family: var(--font0);
+    margin: 10px;
+    text-align: justify;
+    line-height: 20px;
+
+}
+
+main > h1 {
+    text-align: center;
+}
+
+main > h2,h1{
+    font-family: 'droid';
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main > h2 {
+    background-image: linear-gradient(to right, var(--cor2),white);
+}
+
+main > picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-image: linear-gradient(to top,var(--cor4),var(--cor1));
+    width: 100%;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--font1) ;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+header > p {
+    color: white;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header > nav {
+    background-color: var(--cor4);
+    
+}
+
+a {
+    font-family: var(--font0);
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+}
+
+div.video {
+    position: relative;
+    background-color: var(--cor4);
+    height: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 15px;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;    
+}
+
+ul {
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+
+main > aside {
+    background-color: var(--cor1);
+    border-radius: 10px;
+}
+aside > h2 {
+    font-family: var(--font0);
+    background-color: var(--cor3) ;
+    padding: 5px;
+    color: white;
+}
